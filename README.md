@@ -7,7 +7,7 @@ satoshi client and the litecoin client by charles lee.
 Who?
 =====
 
-Written by Joeswhite (most clone changes) and Beastlymac
+Clone chagnes by Joseph White and Beastlymac
 
 CCoin (CCO)
 
