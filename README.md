@@ -3,13 +3,13 @@ CCoin
 CCoin is a decentralized trustless digital peer to peer cryptographic virtual currency based on the
 satoshi client and the litecoin client by charles lee.
 
+CCoin (CCO)
 
 Who?
 =====
 
 Written by Joeswhite (most clone changes) and Beastlymac
 
-CCoin (CCO)
 
 What?
 ====
