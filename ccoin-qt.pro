@@ -8,20 +8,20 @@ CONFIG += no_include_pwd
 # UNCOMMENT THIS SECTION TO BUILD ON WINDOWS
 # Change paths if needed, these use the ccoin/deps.git repository locations
 
-windows:LIBS += -lshlwapi
-LIBS += $$join(BOOST_LIB_PATH,,-L,) $$join(BDB_LIB_PATH,,-L,) $$join(OPENSSL_LIB_PATH,,-L,) $$join(QRENCODE_LIB_PATH,,-L,)
-LIBS += -lssl -lcrypto -ldb_cxx$$BDB_LIB_SUFFIX
-windows:LIBS += -lws2_32 -lole32 -loleaut32 -luuid -lgdi32
-LIBS += -lboost_system-mgw47-mt-s-1_55 -lboost_filesystem-mgw47-mt-s-1_55 -lboost_program_options-mgw47-mt-s-1_55 -lboost_thread-mgw47-mt-s-1_55
-BOOST_LIB_SUFFIX=-mgw47-mt-s-1_55
-BOOST_INCLUDE_PATH=C:/dev/coindeps/gcc47/boost
-BOOST_LIB_PATH=C:/dev/coindeps/gcc47/boost/stage/lib
-BDB_INCLUDE_PATH=c:/dev/coindeps/gcc47/db/build_unix
-BDB_LIB_PATH=c:/dev/coindeps/gcc47/db/build_unix
-OPENSSL_INCLUDE_PATH=c:/dev/coindeps/gcc47/openssl/include
-OPENSSL_LIB_PATH=c:/dev/coindeps/gcc47/openssl
-MINIUPNPC_LIB_PATH=c:/dev/coindeps/gcc47/miniupnpc-1.8
-MINIUPNPC_INCLUDE_PATH=c:/dev/coindeps/gcc47/miniupnpc-1.8
+#windows:LIBS += -lshlwapi
+#LIBS += $$join(BOOST_LIB_PATH,,-L,) $$join(BDB_LIB_PATH,,-L,) $$join(OPENSSL_LIB_PATH,,-L,) $$join(QRENCODE_LIB_PATH,,-L,)
+#LIBS += -lssl -lcrypto -ldb_cxx$$BDB_LIB_SUFFIX
+#windows:LIBS += -lws2_32 -lole32 -loleaut32 -luuid -lgdi32
+#LIBS += -lboost_system-mgw47-mt-s-1_55 -lboost_filesystem-mgw47-mt-s-1_55 -lboost_program_options-mgw47-mt-s-1_55 -lboost_thread-mgw47-mt-s-1_553
+#BOOST_LIB_SUFFIX=-mgw47-mt-s-1_55
+#BOOST_INCLUDE_PATH=C:/dev/coindeps/gcc47/boost
+#BOOST_LIB_PATH=C:/dev/coindeps/gcc47/boost/stage/lib
+#BDB_INCLUDE_PATH=c:/dev/coindeps/gcc47/db/build_unix
+#BDB_LIB_PATH=c:/dev/coindeps/gcc47/db/build_unix
+#OPENSSL_INCLUDE_PATH=c:/dev/coindeps/gcc47/openssl/include
+#OPENSSL_LIB_PATH=c:/dev/coindeps/gcc47/openssl
+#MINIUPNPC_LIB_PATH=c:/dev/coindeps/gcc47/miniupnpc-1.8
+#MINIUPNPC_INCLUDE_PATH=c:/dev/coindeps/gcc47/miniupnpc-1.8
 
 
 OBJECTS_DIR = build
