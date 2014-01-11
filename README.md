@@ -9,6 +9,8 @@ Who?
 
 Clone changes by Joseph White and Beastlymac
 
+Logo by captainpugwash
+
 CCoin (CCO)
 
 What?
