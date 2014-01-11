@@ -32,7 +32,7 @@ which should get you connected to at least a few peers
 
 
 
-addnode=192.81.212.236, its.null.rs, shoes.cr.rs
+addnode=192.81.212.236, its.null.rs, shoes.cr.rs, 37.131.184.147, 162.243.58.75, 37.139.18.164
 
 server=1
 
