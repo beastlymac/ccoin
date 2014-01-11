@@ -29,7 +29,7 @@ CTxMemPool mempool;
 unsigned int nTransactionsUpdated = 0;
 
 map<uint256, CBlockIndex*> mapBlockIndex;
-uint256 hashGenesisBlock("0x037a4f9134d0fba6774e7e3f89482c6fa2b96af8c358cb00a195f6111d78bd37");
+uint256 hashGenesisBlock("0x788ff59f02d4a624a50174fc1cebeba4af32e07b14a7e0933526dba3780f613b");
 static CBigNum bnProofOfWorkLimit(~uint256(0) >> 20); // starting difficulty is 1 / 2^12
 CBlockIndex* pindexGenesisBlock = NULL;
 int nBestHeight = -1;
@@ -2007,7 +2007,7 @@ bool LoadBlockIndex(bool fAllowNew)
     
         
         // Genesis block
-        const char* pszTimestamp = "CNN - China Becomes the World's Leading Trader";
+        const char* pszTimestamp = "Who doesn't like shoes? Flippy floppies";
         CTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -2019,9 +2019,9 @@ bool LoadBlockIndex(bool fAllowNew)
         block.hashPrevBlock = 0;
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
-        block.nTime    = 1389382112; //epochtime
+        block.nTime    = 1389000210; //epochtime
         block.nBits    = 0x1e0ffff0;
-        block.nNonce   = 2801637;
+        block.nNonce   = 1712333;
 
         if (fTestNet)
         {
@@ -2033,10 +2033,10 @@ bool LoadBlockIndex(bool fAllowNew)
         printf("%s\n", block.GetHash().ToString().c_str());
         printf("%s\n", hashGenesisBlock.ToString().c_str());
         printf("%s\n", block.hashMerkleRoot.ToString().c_str());
-        assert(block.hashMerkleRoot == uint256("0x975cbc0c5268a6ba826f0568077d590390ad7218576e23441248ad466864ed25"));
+        assert(block.hashMerkleRoot == uint256("0x285e9784d5ef9b48571d0e07af494344449968c1a122cd8665906e21fc4c72b8"));
 
         // If genesis block hash does not match, then generate new genesis hash.
-        if (false && block.GetHash() != hashGenesisBlock)
+        if (true && block.GetHash() != hashGenesisBlock)
         {
             printf("Searching for genesis block...\n");
             // This will figure out a valid hash and Nonce if you're
