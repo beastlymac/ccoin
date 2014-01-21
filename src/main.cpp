@@ -828,9 +828,12 @@ uint256 static GetOrphanRoot(const CBlock* pblock)
 
 int64 static GetBlockValue(int nHeight, int64 nFees)
 {
+	
     int64 nSubsidy = 1000 * COIN;
-
-    return nSubsidy + nFees;
+    if (nHeight <7500000)
+	return nSubsidy + nFees;
+    else
+    	return nFees;
 }
 
 //old
@@ -1421,7 +1424,7 @@ bool CBlock::ConnectBlock(CTxDB& txdb, CBlockIndex* pindex)
     }
 
     if (vtx[0].GetValueOut() > GetBlockValue(pindex->nHeight, nFees))
-        return false;
+        return state.DoS(100, error("ConnectBlock() : coinbase pays too much (actual=%"PRI64d" vs limit=%"PRI64d")", vtx[0].GetValueOut(), GetBlockValue(pindex->nHeight, nFees)));
 
     // Update block index on disk without changing it in memory.
     // The memory index structure will be changed after the db commits.
