@@ -1003,6 +1003,7 @@ static const char *strDNSSeed[][2] = {
     {"Joe's Flippy Floppys", "seed.cr.rs"},
     {"Joe's Pool Seed", "seed.freicoin.us"},
     {"FreiCoin Wiki Seed", "wiki.freicoin.us"},
+    {"2 Guys Hashing Seed", "2guyshashing.com"},
 };
 
 void ThreadDNSAddressSeed(void* parg)
